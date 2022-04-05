@@ -24,7 +24,7 @@ class Header extends Component{
             <Collapse navbar>
               <Nav className="me-auto" navbar>
                 <NavItem>
-                  <NavLink href="./pages/CatIndex">See Cats</NavLink>
+                  <NavLink href="./pages/CatIndex">See Cats1</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="https://github.com/learn-academy-2022-alpha/cat-tinder-frontend-exotic-shorthair-keelan-stevie.git">

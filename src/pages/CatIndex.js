@@ -4,7 +4,7 @@ class CatIndex extends Component{
   render(){
     return(
       <>
-        <h2>INDEX FILE</h2>
+        <h2>INDEX FILE1</h2>
       </>
     )
   }

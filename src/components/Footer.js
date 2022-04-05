@@ -15,7 +15,7 @@ class Footer extends Component{
     return(
       <div>
       <Navbar color="light" expand="md" fixed="bottom" light>
-        <NavbarBrand href="/">Thanks for trying our app!</NavbarBrand>
+        <NavbarBrand href="/">Thanks for trying our app!1</NavbarBrand>
         <NavbarToggler onClick={function noRefCheck() {}} />
         <Collapse navbar>
           <Nav className="me-auto" navbar>

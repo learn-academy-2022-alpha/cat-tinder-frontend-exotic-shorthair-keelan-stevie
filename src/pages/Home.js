@@ -4,7 +4,7 @@ class Home extends Component{
   render(){
     return(
       <>
-        <h2>HOME FILE</h2>
+        <h2>HOME FILE1</h2>
       </>
     )
   }

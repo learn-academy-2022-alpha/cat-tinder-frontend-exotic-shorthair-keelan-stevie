@@ -24,7 +24,7 @@ class App extends Component {
       <Router>
         <Header />
         <h1>
-          CAT TINDER! {" "}
+          CAT TINDER! *change {" "}
         </h1>
         <Switch>
           <Route exact path="/" component={Home} />
