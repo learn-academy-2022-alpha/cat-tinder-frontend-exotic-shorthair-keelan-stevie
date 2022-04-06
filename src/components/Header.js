@@ -7,10 +7,11 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  // add drop down
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
   NavbarText,
 } from "reactstrap";
 
@@ -18,6 +19,7 @@ class Header extends Component{
   render(){
     return(
         <div>
+          <h1>hello world</h1>
           <Navbar color="light" expand="md" fixed="top" light>
             <NavbarBrand href="/">CAT TINDER!</NavbarBrand>
             <NavbarToggler onClick={function noRefCheck() {}} />
@@ -31,7 +33,8 @@ class Header extends Component{
                     SEE THE CODE
                   </NavLink>
                 </NavItem>
-                <UncontrolledDropdown inNavbar nav>
+                {/* adds dropdown menu */}
+                {/* <UncontrolledDropdown inNavbar nav>
                   <DropdownToggle caret nav>
                     Options
                   </DropdownToggle>
@@ -41,7 +44,7 @@ class Header extends Component{
                     <DropdownItem divider />
                     <DropdownItem>no u</DropdownItem>
                   </DropdownMenu>
-                </UncontrolledDropdown>
+                </UncontrolledDropdown> */}
               </Nav>
               <NavbarText>Meow ;)</NavbarText>
             </Collapse>

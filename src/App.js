@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import Footer3 from "components/footers/Footer3.js";
 import Home from "./pages/Home";
 import CatIndex from "./pages/CatIndex";
 import CatShow from "./pages/CatShow";
