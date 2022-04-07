@@ -7,11 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  // add drop down
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem,
   NavbarText,
 } from "reactstrap";
 
@@ -26,25 +21,13 @@ class Header extends Component{
             <Collapse navbar>
               <Nav className="me-auto" navbar>
                 <NavItem>
-                  <NavLink href="./pages/CatIndex">See Cats1</NavLink>
+                  <NavLink href="./pages/CatIndex">See Cats</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="https://github.com/learn-academy-2022-alpha/cat-tinder-frontend-exotic-shorthair-keelan-stevie.git">
                     SEE THE CODE
                   </NavLink>
                 </NavItem>
-                {/* adds dropdown menu */}
-                {/* <UncontrolledDropdown inNavbar nav>
-                  <DropdownToggle caret nav>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>Submit a Cat</DropdownItem>
-                    <DropdownItem>Edit a Cat</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>no u</DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown> */}
               </Nav>
               <NavbarText>Meow ;)</NavbarText>
             </Collapse>

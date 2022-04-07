@@ -8,7 +8,8 @@ import CatNew from "./pages/CatNew";
 import CatEdit from "./pages/CatEdit";
 import NotFound from "./pages/NotFound";
 import mockCats from "./mockCats.js";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, NavLink, } from "react-router-dom";
+
 
 class App extends Component {
   constructor(props) {
@@ -22,13 +23,21 @@ class App extends Component {
     return (
       <Router>
         <Header />
-        <h1>
-          CAT TINDER! *change {" "}
-        </h1>
+        <h1>CAT TINDER!</h1>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/catindex" component={CatIndex} />
-          <Route path="/catshow" component={CatShow} />
+          <Route
+            path="/catindex"
+            render={(props) => <CatIndex cats={this.state.cats} />}
+          />
+          <Route
+            path="/catshow/:id"
+            render={(props) => {
+              let id = props.match.params.id;
+              let cat = this.state.cats.find((cat) => cat.id === +id);
+              return <CatShow cat={cat} />;
+            }}
+          />
           <Route path="/catnew" component={CatNew} />
           <Route path="/catedit" component={CatEdit} />
           <Route component={NotFound} />

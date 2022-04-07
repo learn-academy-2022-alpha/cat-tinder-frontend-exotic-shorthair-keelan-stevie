@@ -17,13 +17,9 @@ Enzyme.configure({adapter: new Adapter()})
 describe("When Home renders", () => {
     it("displays a heading", () => {
       const home = shallow(<Home />)
-      const homeHeading = home.find("h2").text()
-      expect(homeHeading).toEqual("HOME FILE1")
+      const homeHeadingText = home.find("h2").text()
+      expect(homeHeadingText).toEqual("HOME FILE1")
     })
   })
 
 
-//   Test Suites: 1 passed, 1 total
-// Tests:       1 passed, 1 total
-// Snapshots:   0 total
-// Time:        5.185 s

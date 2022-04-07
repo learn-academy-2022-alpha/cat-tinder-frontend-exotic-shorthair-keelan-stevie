@@ -17,11 +17,8 @@ Enzyme.configure({adapter: new Adapter()})
 describe("When Header renders", () => {
     it("displays a NavbarBrand", () => {
       const header = shallow(<Header />)
-      const headerHeading = header.find("h1").text()
-      expect(headerHeading).toEqual("hello world")
+      const headerHeadingText = header.find("h1").text()
+      expect(headerHeadingText).toEqual("hello world")
     })
   })
 
-
-//   Test Suites: 1 failed, 3 passed, 4 total
-// Tests:       1 failed, 3 passed, 4 total

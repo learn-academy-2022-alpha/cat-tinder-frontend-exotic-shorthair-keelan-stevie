@@ -17,13 +17,9 @@ Enzyme.configure({adapter: new Adapter()})
 describe("When NotFound renders", () => {
     it("displays a heading", () => {
       const notFound = shallow(<NotFound />)
-      const notFoundHeading = notFound.find("h1").text()
-      expect(notFoundHeading).toEqual("404 PAGE NOT FOUND1")
+      const notFoundHeadingText = notFound.find("h1").text()
+      expect(notFoundHeadingText).toEqual("404 PAGE NOT FOUND1")
     })
   })
 
 
-//   Test Suites: 2 passed, 2 total
-// Tests:       2 passed, 2 total
-// Snapshots:   0 total
-// Time:        7.949 s

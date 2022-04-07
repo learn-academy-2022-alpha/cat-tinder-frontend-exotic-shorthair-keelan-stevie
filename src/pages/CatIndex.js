@@ -1,10 +1,23 @@
 import React, { Component } from 'react'
+import { Card, CardTitle, Col } from 'reactstrap'
 
 class CatIndex extends Component{
   render(){
     return(
       <>
-        <h2>INDEX FILE1</h2>
+        <h3>Local Cats in your area!</h3>
+<br />
+<Col sm="6">
+  {this.props.cats.map(cat => {
+    return(
+      <Card body key={cat.id}>
+        <CardTitle>
+          <h4>{cat.name}</h4>
+        </CardTitle>
+      </Card>
+    )
+  })}
+</Col>
       </>
     )
   }

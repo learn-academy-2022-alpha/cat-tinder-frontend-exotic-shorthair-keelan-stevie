@@ -23,5 +23,3 @@ describe("When Footer renders", () => {
   })
 
 
-//   Test Suites: 1 failed, 4 passed, 5 total
-// Tests:       1 failed, 4 passed, 5 total
